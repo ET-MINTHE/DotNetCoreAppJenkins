@@ -6,7 +6,7 @@ pipeline {
  stages {
   stage('Checkout') {
    steps {
-    git credentialsId: 'minthe-git-id', url: 'https://github.com/NeelBhatt/SampleCliApp', branch: 'master'
+    git credentialsId: 'minthe-git-id', url: 'https://github.com/ET-MINTHE/DotNetCoreAppJenkins.git', branch: 'master'
    }
   }
   stage('Restore PACKAGES') {
